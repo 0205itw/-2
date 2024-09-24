@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детская игра на совпадение картинок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Боковое меню -->
+        <div class="sidebar">
+            <button id="createPlayer" class="btn">Создать имя игрока</button>
+            <input type="text" id="playerName" class="hidden" placeholder="Введите имя">
+            <button id="startGame" class="btn" disabled>Начать игру/Продолжить игру</button>
+            <button id="pauseGame" class="btn" disabled>Пауза</button>
+            <button id="replayGame" class="btn" disabled>Пройти игру еще раз</button>
+        </div>
+
+        <!-- Игровое поле -->
+        <div class="gameField">
+            <h2 id="welcomeMessage">Привет. Будем играть?</h2>
+            <div id="gameArea" class="hidden"></div>
+            <h2 id="pauseMessage" class="hidden">Пауза</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
